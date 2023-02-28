@@ -41,8 +41,8 @@ describe('App.vue', () =>{
     })
     expect(appWrapper.vm).toBeTruthy();
   })
-  test('Page Not found contains Go To Home', () => {
-    expect(appWrapper.html()).toContain("Go To Home")
+  test('Page Not found contains Return To Home Page', () => {
+    expect(appWrapper.html()).toContain("Return To Home Page")
   })
   
   test('checks for Page not found component', () => {
@@ -70,7 +70,7 @@ describe('testing for error=false condition', () => {
     wrapper1.unmount()
   })
   test('testing false case',()=>{
-    expect(wrapper1.html()).toContain('Sorry')
+    expect(wrapper1.html()).toContain('wrong')
 
   })
 })
