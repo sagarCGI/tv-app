@@ -1,7 +1,7 @@
 <template>
   <div class="container">
         <h1 class="message">{{ errorMessage }}</h1>
-        <button @click="goToHome" class="btn btn-secondary btn-sm"
+        <button @click="goToHome" v-if="this.$route.name != 'DashboardPage'" class="btn btn-secondary btn-sm"
           >Return To Home Page</button
         >
   </div>

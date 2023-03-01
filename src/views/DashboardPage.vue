@@ -1,5 +1,4 @@
 <template>
-    <carousel-component/>
     <div class="category" v-for="(showCategeory, i) in showsCategorized" :key="i">
         <h4 class="headingTitle">{{ showCategeory.genreName }}</h4>
         <router-link class="text-style" :to="{ name: 'ViewCategory', params: { genreName: showCategeory.genreName } }">
